@@ -2,4 +2,5 @@ export const ROUTES = {
   HOME_PAGE: "/",
   HEADER: "/header",
   ACCORDION: "/accordion",
+  FILE_UPLOADER: "/file_uploader",
 };
