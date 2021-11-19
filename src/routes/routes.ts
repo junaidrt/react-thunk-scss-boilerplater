@@ -3,7 +3,7 @@ import { Home } from "../component/home/Home";
 import { ROUTES } from "./routeConstants";
 import { Header } from "../component/Header/Header";
 import {Accordion} from "../component/accordion/Accordion";
-import {FileUploader} from "../component/FileUploader/FileUploader";
+import { FileUploader } from "../component/FileUploader/FileUploader";
 
 const { HOME_PAGE } = ROUTES;
 const { HEADER } = ROUTES;
