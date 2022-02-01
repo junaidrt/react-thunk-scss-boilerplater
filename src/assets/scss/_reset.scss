@@ -11,14 +11,15 @@
   url('../fonts/ArialMTBlack.ttf') format('truetype');
   @include font_face_design;
 }
-
 :root {
   --color-page-background: #{$white_color};
   --color-text: #{$dark_color};
+  --border: #{$dark_color};
 }
 .dark {
   --color-page-background: #{$dark_color};
   --color-text: #{$white_color};
+  --border: #{$white_color};
 }
 body {
   margin: 0;
@@ -78,7 +79,7 @@ input[type="tel"],
 input[type="number"],
 input[type="date"],
 select{
-  color:$dark_color;
+  color:var(--color-text);
 }
 input[type="date"]::-webkit-calendar-picker-indicator{
   background: $transparent;
@@ -98,8 +99,8 @@ input[type="date"]::-webkit-calendar-picker-indicator{
   overflow: $hidden;
 }
 .container{
-  width: 1200px;
-  max-width: $w_100;
+  width: $w_100;
+  max-width: 1200px;
   padding: 0 15px;
   margin: $margin_auto;
 }
@@ -112,7 +113,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
   clear: both;
   content: '';
 }
-.main-bg { background: $dark_color;}
+.main-bg { background: var(--color-page-background);}
 .position_abs_right {
   @include position_abs_right;
 }
